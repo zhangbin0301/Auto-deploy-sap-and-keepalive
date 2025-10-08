@@ -264,7 +264,6 @@ jobs:
     - name: Set environment variables
       run: |
         # nodealp镜像基础环境变量,
-        cf set-env ${{ env.APP_NAME }} NAME "SAP.com"
         cf set-env ${{ env.APP_NAME }} UUID "${{ secrets.UUID }}"
         cf set-env ${{ env.APP_NAME }} VLPATH "${{ secrets.VLPATH }}"
         cf set-env ${{ env.APP_NAME }} XHPPATH "${{ secrets.XHPPATH }}"
